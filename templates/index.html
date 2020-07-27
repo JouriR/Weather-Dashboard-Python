@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<body>
+    <h2>Weather Dashboard</h2>
+    <form id="weatherForm" action="results" method="post">
+        Zip Code: <input id="weatherInput" type="text" name="zipCode"><br>
+        Country Code: <input id="weatherInput" type="text" name="countryCode"><br>
+        <input id="weatherSubmit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
