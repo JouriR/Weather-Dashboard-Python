@@ -33,7 +33,7 @@ def get_api_key():
 
 
 def get_weather_results(zip_code, country_code, api_key):
-    api_url = "https://api.openweathermap.org/data/2.5/weather?zip={},{}&appid={}".format(
+    api_url = "https://api.openweathermap.org/data/2.5/weather?zip={},{}&units=metric&appid={}".format(
         zip_code, country_code, api_key)
     r = requests.get(api_url)
     return r.json()
